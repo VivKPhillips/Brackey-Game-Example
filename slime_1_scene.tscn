@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://d2qniy3ag0hoy"]
 
 [ext_resource type="Texture2D" uid="uid://d0polc6r0m2rw" path="res://Assets/sprites/slime_green.png" id="1_b7awu"]
-[ext_resource type="PackedScene" uid="uid://4vb646xd7yaj" path="res://Scenes/killzone.tscn" id="2_cbd27"]
+[ext_resource type="PackedScene" uid="uid://4vb646xd7yaj" path="res://Scenes/killzone_scene.tscn" id="2_cbd27"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f2gu2"]
 atlas = ExtResource("1_b7awu")
@@ -50,6 +50,7 @@ sprite_frames = SubResource("SpriteFrames_qsmvj")
 frame = 2
 
 [node name="Killzone" parent="." instance=ExtResource("2_cbd27")]
+script = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(0.5, -7.5)
